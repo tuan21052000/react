@@ -7,13 +7,13 @@ import Alert from "./Alert";
 
 const Searchbar = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    const showsContext = useContext(ShowsContext);
-    const {searchShows} = ShowsContext;
+    const {searchShows} = useContext(ShowsContext);
     
 
     const onSearchHanler = (e) => {
         e.preventDefault();
        searchShows(searchTerm);
+     
     };
 
   return ( 
